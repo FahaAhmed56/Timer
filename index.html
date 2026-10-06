@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Focus Timer</h1>
+    <div class="modes">
+      <button class="mode active" data-minutes="25">Focus</button>
+      <button class="mode" data-minutes="5">Short Break</button>
+      <button class="mode" data-minutes="15">Long Break</button>
+    </div>
+    <div id="time" class="time">25:00</div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="reset" class="ghost">Reset</button>
+    </div>
+    <p class="sessions">Sessions completed today: <span id="count">0</span></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
